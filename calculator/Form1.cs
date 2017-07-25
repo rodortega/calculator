@@ -43,10 +43,5 @@ namespace calculator
                 MessageBox.Show("Username and Password combination does not match.", "Login Error");
             }
         }
-
-        private void form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
