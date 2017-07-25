@@ -24,20 +24,23 @@ namespace calculator
 
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green900, Primary.Green500, Accent.LightBlue200, TextShade.WHITE);
-
         }
 
 
         private void login_Click(object sender, EventArgs e)
         {
             var system_username = "admin";
-            var system_password = "admin";
+            var system_password = "1234";
 
             if (username.Text == system_username && password.Text == system_password)
             {
                 this.Hide();
                 var calculatorForm = new form2();
                 calculatorForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Username and Password combination does not match.", "Login Error");
             }
         }
 
